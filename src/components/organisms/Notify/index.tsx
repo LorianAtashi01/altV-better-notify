@@ -23,7 +23,7 @@ const Notify = ({ iconType, title, message, color, width }: NotifyProps) => {
         <NotifyHolder
           title={title}
           message={message}
-          width={244}
+          width={width}
         ></NotifyHolder>
       </StyledBackground>
     </MainWrapper>
