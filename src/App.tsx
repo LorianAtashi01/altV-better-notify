@@ -9,7 +9,6 @@ import Notify from './components/organisms/Notify';
 import { environment } from './constants/environment';
 
 const App = observer(() => {
-  const [notifyId, setNotifyId] = useState(0);
   const store = useStore();
 
   const handleClick = () => {
@@ -31,20 +30,18 @@ const App = observer(() => {
       if (store.queue.length > 0 && store.active.length < 4) {
         timeoutNotification(JSON.parse(store.getShiftedQueue()));
       }
-    }, 3000);
+    }, duration);
   };
 
   const showNotifications = async (notification: any) => {
     notification = {
-      id: notifyId,
+      id: notification.id,
       iconType: notification.iconType,
       title: notification.title,
       message: notification.message,
       color: notification.color,
       width: notification.width,
     };
-
-    setNotifyId(notifyId + 1);
 
     if (store.active.length > 3) {
       store.pushQueue(notification);
