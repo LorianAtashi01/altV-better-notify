@@ -38,7 +38,7 @@ server example
 ```js
 alt.emitClient('notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 244, duration: 3000})
 ```
-### please note: 244 wild be the perfect width</strong>
+### please note: 244 will be the perfect width but you can change it if you want</strong>
 ### please note: duration has to be in miliseconds</strong>
 
 Notification Color Types:
