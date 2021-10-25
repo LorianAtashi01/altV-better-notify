@@ -6,6 +6,8 @@ This Project will be Open-Source because I want to share it so other people can 
 
 It was made by me while i was working on our RP Project nowV.
 
+Design Pattern: Atomic Design Methodology
+
 ### Showcase
 https://gyazo.com/c34cf70d6393299e0eb3b448f0804c24
 
