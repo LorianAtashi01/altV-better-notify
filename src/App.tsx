@@ -18,6 +18,7 @@ const App = observer(() => {
       message: 'notification.message',
       color: '03A65A',
       width: 244,
+      duration: 3000,
     };
 
     showNotifications(notification);
@@ -41,6 +42,7 @@ const App = observer(() => {
       message: notification.message,
       color: notification.color,
       width: notification.width,
+      duration: 3000,
     };
 
     if (store.active.length > 3) {
