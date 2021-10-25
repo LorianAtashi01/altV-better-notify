@@ -1,5 +1,7 @@
 # altV-better-notify
 
+Notification System done in React(Typescript) including a Queue System
+
 This Project will be Open-Source because I want to share it so other people can have a Notification System together with an Queue System
 
 It was made by me while i was working on our RP Project nowV.
