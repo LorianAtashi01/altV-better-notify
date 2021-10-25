@@ -8,6 +8,7 @@ alt.onServer(
   'client:notify:sendMessage',
   ({ iconType, title, message, color, width, duration }) => {
     view.emit('notify:ShowNotification', {
+      id: id,
       iconType,
       title,
       message,
@@ -15,6 +16,7 @@ alt.onServer(
       width,
       duration,
     });
+    id++;
   }
 );
 
@@ -22,6 +24,7 @@ alt.on(
   'notify:sendMessage',
   ({ iconType, title, message, color, width, duration }) => {
     view.emit('notify:ShowNotification', {
+      id: id,
       iconType,
       title,
       message,
@@ -29,5 +32,6 @@ alt.on(
       width,
       duration,
     });
+    id++;
   }
 );
