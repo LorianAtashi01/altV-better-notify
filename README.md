@@ -1,8 +1,12 @@
 # altV-better-notify
 
+Notification System done in React(Typescript) including a Queue System
+
 This Project will be Open-Source because I want to share it so other people can have a Notification System together with an Queue System
 
 It was made by me while i was working on our RP Project nowV.
+
+Design Pattern: Atomic Design Methodology
 
 ### Showcase
 https://gyazo.com/c34cf70d6393299e0eb3b448f0804c24
@@ -34,9 +38,9 @@ alt.emit('notify:sendMessage', {iconType: 0, title: 'notification', message: 'th
 
 server example
 ```js
-alt.emitClient('notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 244, duration: 3000})
+alt.emitClient(player, 'notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 244, duration: 3000})
 ```
-### please note: 244 wild be the perfect width</strong>
+### please note: 244 will be the perfect width but you can change it if you want</strong>
 ### please note: duration has to be in miliseconds</strong>
 
 Notification Color Types:
