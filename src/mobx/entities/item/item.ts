@@ -1,6 +1,6 @@
 import { types } from 'mobx-state-tree';
 
-export const Active = types.model('Active', {
+export const Item = types.model('Item', {
   id: types.number,
   iconType: types.number,
   title: types.string,

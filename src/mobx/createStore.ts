@@ -1,13 +1,12 @@
 import { types } from 'mobx-state-tree';
 
-import { Active } from './entities/active/active';
-import { Queue } from './entities/queue/queue';
+import { Item } from './entities/item/item';
 
 export function createStore() {
   const Store = types
     .model('Store', {
-      active: types.optional(types.array(Queue), []),
-      queue: types.optional(types.array(Queue), []),
+      active: types.optional(types.array(Item), []),
+      queue: types.optional(types.array(Item), []),
     })
     .actions((self) => ({
       pushActive(data: any) {
