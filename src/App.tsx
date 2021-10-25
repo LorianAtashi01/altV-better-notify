@@ -30,7 +30,7 @@ const App = observer(() => {
       if (store.queue.length > 0 && store.active.length < 4) {
         timeoutNotification(JSON.parse(store.getShiftedQueue()));
       }
-    }, duration);
+    }, notification.duration);
   };
 
   const showNotifications = async (notification: any) => {
