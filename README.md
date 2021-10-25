@@ -24,7 +24,7 @@ Installing the modules:
 Build the Project:
 `yarn build`
 
-You will find the bundled files inside the `public` folder.
+You will find the bundled files inside the `build` folder.
 
 If you want to play arround on the browser with the project, make a copy the `environment.example.ts` file and change the surface string to `browser`
 
