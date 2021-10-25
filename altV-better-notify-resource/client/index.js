@@ -6,23 +6,28 @@ let id = 0;
 
 alt.onServer(
   'client:notify:sendMessage',
-  ({ iconType, title, message, color, width }) => {
+  ({ iconType, title, message, color, width, duration }) => {
     view.emit('notify:ShowNotification', {
       iconType,
       title,
       message,
       color,
       width,
+      duration,
     });
   }
 );
 
-alt.on('notify:sendMessage', ({ iconType, title, message, color, width }) => {
-  view.emit('notify:ShowNotification', {
-    iconType,
-    title,
-    message,
-    color,
-    width,
-  });
-});
+alt.on(
+  'notify:sendMessage',
+  ({ iconType, title, message, color, width, duration }) => {
+    view.emit('notify:ShowNotification', {
+      iconType,
+      title,
+      message,
+      color,
+      width,
+      duration,
+    });
+  }
+);
