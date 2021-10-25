@@ -26,6 +26,7 @@ const Template = (args: NotifyProps) => (
 );
 
 export const LoginButton = Template.bind({});
+//@ts-ignore
 LoginButton.args = {
   iconType: 2,
   title: 'Test',
