@@ -22,18 +22,22 @@ Build the Project:
 
 You will find the bundled files inside the `public` folder.
 
+If you want to play arround on the browser with the project, make a copy the `environment.example.ts` file and change the surface string to `browser`
+
 ### Usage
 You can send a notifications from the server or the client:
 
 client example
 ```js
-alt.emit('notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 0})
+alt.emit('notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 244, duration: 3000})
 ```
 
 server example
 ```js
-alt.emitClient('notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 0})
+alt.emitClient('notify:sendMessage', {iconType: 0, title: 'notification', message: 'this is a notification send from the client', color: 'F88F01', width: 244, duration: 3000})
 ```
+### please note: 244 wild be the perfect width</strong>
+### please note: duration has to be in miliseconds</strong>
 
 Notification Color Types:
 
