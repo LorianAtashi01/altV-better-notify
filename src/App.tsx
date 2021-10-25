@@ -18,7 +18,7 @@ const App = observer(() => {
       title: 'notification.title',
       message: 'notification.message',
       color: '03A65A',
-      width: 0,
+      width: 244,
     };
 
     showNotifications(notification);
@@ -31,7 +31,7 @@ const App = observer(() => {
       if (store.queue.length > 0 && store.active.length < 4) {
         timeoutNotification(JSON.parse(store.getShiftedQueue()));
       }
-    }, 5000);
+    }, 120 * notification.message.length);
   };
 
   const showNotifications = async (notification: any) => {
