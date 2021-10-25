@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/src/constants/environment.ts
+
 # production
 /build
 
