@@ -78,6 +78,7 @@ const App = observer(() => {
         return (
           <Notify
             key={notification.id}
+            iconType={notification.iconType}
             title={notification.title}
             message={notification.message}
             color={notification.color}
