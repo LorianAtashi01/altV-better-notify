@@ -8,6 +8,6 @@ It was made by me while i was working on our RP Project nowV.
 
 The project uses yarn as an package-manager
 
-It also includes storybook to design/develop the notifications faster.
+It also includes storybook(https://storybook.js.org/docs/react/get-started/introduction) to design/develop the notifications faster.
 
 `yarn install` or `yarn` to install node_modules
